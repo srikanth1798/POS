@@ -1,0 +1,212 @@
+.ticket-page {
+  padding: 2rem 0;
+}
+
+.ticket-details {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem !important;
+  height: 100%;
+}
+
+.ticket-details h2 {
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.reported-by,
+.created-on,
+.status,
+.priority,
+.assigned-too,
+.email-notifications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.reported-by b,
+.created-on b,
+.status b,
+.priority b,
+.assigned-too b,
+.email-notifications b {
+  color: #4a5568;
+  font-size: 0.95rem;
+  min-width: 120px;
+}
+
+.reported-by p:last-child,
+.created-on div:last-child,
+.assigned-too div:last-child {
+  color: #2d3748;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.form-select {
+  width: 160px;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #2d3748;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-select:hover {
+  border-color: #cbd5e0;
+}
+
+.form-select:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+  outline: none;
+}
+
+.email-notifications input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid #edf2f7;
+}
+
+.form-select {
+  width: 200px;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.btn-link {
+  color: #0d6efd;
+  padding: 0;
+}
+
+.btn-link:hover {
+  color: #0a58ca;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.attachment-item {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.reply-section {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .ticket-page {
+    padding: 1rem;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .ticket-details {
+    padding: 1rem !important;
+  }
+
+  .reported-by,
+  .created-on,
+  .status,
+  .priority,
+  .assigned-too,
+  .email-notifications {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .form-select {
+    width: 100%;
+  }
+
+  .reported-by b,
+  .created-on b,
+  .status b,
+  .priority b,
+  .assigned-too b,
+  .email-notifications b {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.status select option[value="new"] { color: #3182ce; }
+.status select option[value="open"] { color: #38a169; }
+.status select option[value="pending"] { color: #d69e2e; }
+.status select option[value="solved"] { color: #e53e3e; }
+
+.priority select option[value="low"] { color: #38a169; }
+.priority select option[value="medium"] { color: #d69e2e; }
+.priority select option[value="high"] { color: #e53e3e; }
+
+/* Status Colors */
+.text-primary { color: #4299e1 !important; }
+.text-warning { color: #ecc94b !important; }
+.text-info { color: #4fd1c5 !important; }
+.text-success { color: #48bb78 !important; }
+.text-secondary { color: #718096 !important; }
+
+/* Checkbox Styling */
+.form-check-input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+  border: 2px solid #cbd5e0;
+  border-radius: 0.25rem;
+}
+
+.form-check-input:checked {
+  background-color: #4299e1;
+  border-color: #4299e1;
+}
+
+/* Animations */
+.form-select,
+.form-check-input {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Card Shadow on Hover */
+.ticket-details:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+} 
